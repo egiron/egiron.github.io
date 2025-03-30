@@ -13,6 +13,7 @@ a[href]::after {
 
 section {
   page-break-inside: avoid;
+  margin-bottom: 1.2rem;
 }
 
 header {
@@ -37,6 +38,15 @@ main {
   padding-left: 0.5in;
   padding-bottom: 0.5in;
 }
+
+.section-title {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #444;
+}
+
 
 aside {
   padding-right: 0.5in;
@@ -85,11 +95,15 @@ aside h6 {
 }
 
 .page-content .container {
-  grid-template-columns: 2fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .header-top {
   gap: 2rem;
+}
+.header-info h1 {
+  border-bottom: 1px solid #ccc;
 }
 
 .page-header ul {
@@ -108,6 +122,46 @@ aside h6 {
   color: #ccc;
 }
 
+.header-urls {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* EDUCATION */
+.section-item {
+  margin-left: 1.5rem;
+}
+.section-item-title{
+  font-style: italic;
+  font-weight: 700;
+  /* font-family: "Nunito" */
+}
+.section-item-computer-skills {
+  margin-left: 1.5rem;
+}
+/* .section-item-computer-skills ul{
+  gap: 0.25rem;
+} */
+.section-item-computer-skills-list {
+  list-style: disc;
+  margin-left: 2.5rem;
+}
+.section-item-computer-skills-list li {
+  margin-left: 1.5rem;
+  gap: 0.25rem;
+}
+.section-item-computer-skills-title {
+  margin-left: 0.5rem;
+  font-style: italic;
+  font-weight: 700;
+}
+.section-item-computer-skills-desc{
+  margin-left: 0.5rem;
+  font-style: italic;
+}
+
+/* WORK EXPERIENCE */
 .tbl-work-experience{
   margin-left: 1.5rem;
 }
@@ -129,4 +183,11 @@ aside h6 {
 .section-job-position{
   text-align: left;
   font-weight: 700;
+}
+
+.publication-title {
+  font-style: italic;
+}
+.presentation-title{
+  font-style: italic;
 }

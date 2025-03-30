@@ -374,6 +374,30 @@ blockquote {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+
+.tbl-work-experience{
+  margin-left: -1.5rem;
+}
+.tbl-work-experience tr{
+  margin-bottom: 0.5rem;
+  display: inline-table;
+}
+.section-job-year{
+  /* display: flex; */
+  width: 7.5rem;
+  /* align-items: right; */
+  text-align: right;
+  vertical-align: top;
+  color: gray;
+}
+.section-job-description{
+  text-align: left;
+}
+.section-job-position{
+  text-align: left;
+  font-weight: 700;
+}
+
 @media (min-width: 37.5rem) {
   .main-gallery {
     grid-template-columns: repeat(3, 1fr);
